@@ -1,0 +1,27 @@
+{
+  "seller": [
+    {
+      "name": "vinay kumar",
+      "email": "vinaykumarnab@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "hakim",
+      "email": "vinayssmnbr@gmail.com",
+      "password": "1234",
+      "id": 2
+    }
+  ],
+  "product": [
+    {
+      "name": "iPhone14",
+      "price": "70000",
+      "category": "phone",
+      "color": "grey",
+      "discription": "good quality",
+      "image": "https://www.91-img.com/gallery_images_uploads/0/e/0ebdcb79e919183de3974d52c5cbb60ae242bb4c.JPG?tr=h-550,w-0,c-at_max",
+      "id": 4
+    }
+  ]
+}

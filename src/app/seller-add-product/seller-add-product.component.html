@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="form_wrapper">
+    <div class="heading">
+      <h1>Add New Product</h1>
+      <p class="product_message">{{productMessage}}</p>
+    </div>
+    <div class="form_wrapper_wrap">
+      <form #addproduct="ngForm" (ngSubmit)="submitProduct(addproduct.value)">
+        <div class="input_field">
+          <input type="text" placeholder="Enter product name" ngModel name="name">
+        </div>
+        <div class="input_field">
+          <input type="email" placeholder="Enter product price" ngModel name="price">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="product category" ngModel name="category">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="product color" ngModel name="color">
+        </div>
+        <div class="input_field">
+          <textarea name="discription" id="" cols="30" rows="5" placeholder="product discription" ngModel></textarea>
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="product image url" ngModel name="image">
+        </div>
+        <button class="form_btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

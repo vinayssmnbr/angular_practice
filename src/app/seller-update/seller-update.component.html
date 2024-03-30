@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="form_wrapper">
+    <div class="heading">
+      <h1>Update Product</h1>
+      <p class="product_message">{{productMessage}}</p>
+    </div>
+    <div class="form_wrapper_wrap">
+      <form #updateproduct="ngForm" (ngSubmit)="updateData(updateproduct.value)">
+        <div class="input_field">
+          <input type="text" placeholder="Enter product name" name="name" ngModel="{{productData?.name}}">
+        </div>
+        <div class="input_field">
+          <input type="email" placeholder="Enter product price" ngModel="{{productData?.price}}" name="price">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="product category" ngModel="{{productData?.category}}" name="category">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="product color" name="color" ngModel="{{productData?.color}}">
+        </div>
+        <div class="input_field">
+          <textarea name="discription" id="" cols="30" rows="5" placeholder="product discription"
+            ngModel="{{productData?.discription}}"></textarea>
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="product image url" ngModel="{{productData?.image}}" name="image">
+        </div>
+        <button class="form_btn">Save</button>
+        <!-- <a routerLink="/seller-home">Save</a> -->
+        <!-- <button (click)="closeForm()">Close</button> -->
+      </form>
+    </div>
+  </div>
+</div>

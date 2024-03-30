@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="header_wrapper">
+    <div class="header_logo">
+      <h1 orange><a routerLink="/">VINAY</a></h1>
+    </div>
+    <div *ngIf="menuType==='default'" class="search_filed">
+      <input type="search">
+      <a href="">Search</a>
+    </div>
+    <div [ngSwitch]="menuType">
+      <ul *ngSwitchCase="'default'" class="navigation">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/seller-auth">Seller</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">cart(0)</a></li>
+      </ul>
+      <ul *ngSwitchCase="'seller'" class="navigation">
+        <li><a routerLink="/seller-home">Product List</a></li>
+        <li><a routerLink="/seller-add-product">Add Product</a></li>
+        <li><a (click)="sellerLogout()">Logout</a></li>
+        <li><a href="#">{{sellerName | titlecase}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

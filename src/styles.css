@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+} */
+.header {
+  background: #000;
+}
+.form_wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px 20px;
+  background: #fff;
+  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.15);
+}
+.form_wrapper form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+.input_field {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+.form_btn {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form_btn a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 40px;
+  text-decoration: none;
+  background-color: aqua;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid aqua;
+}
+.form_btn a:hover {
+  background-color: transparent;
+  color: aqua;
+  border: 1px solid aqua;
+}
+.login_error {
+  color: red;
+}
+textarea {
+  width: 100%;
+}
+.product_message {
+  color: green;
+}

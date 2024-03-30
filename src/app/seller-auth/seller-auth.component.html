@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="form_wrapper">
+    <div class="signup_form" *ngIf="!showLogin">
+      <form action="" #sellerSignUp="ngForm" (ngSubmit)="onSubmit(sellerSignUp.value)">
+        <div class="input_field">
+          <input type="text" placeholder="Enter your name" ngModel name="name">
+        </div>
+        <div class="input_field">
+          <input type="email" placeholder="Enter your Email" ngModel name="email">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Password" ngModel name="password">
+        </div>
+        <button class="form_btn">Signup</button>
+        <a (click)="openLogin()">Alread register?Login here</a>
+      </form>
+    </div>
+    <!-- login -->
+    <div class="signup_form" *ngIf="showLogin">
+      <p class="login_error">{{authError}}</p>
+      <form action="" #sellerLogin="ngForm" (ngSubmit)="onLogin(sellerLogin.value)">
+        <div class="input_field">
+          <input type="email" placeholder="Enter your Email" ngModel name="email">
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Password" ngModel name="password">
+        </div>
+        <button class="form_btn">Login</button>
+        <a (click)="openSignup()">Don't have Register here</a>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.navigation li {
+  list-style: none;
+}
+ul.navigation li a {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  color: #fff;
+}
+.search_filed {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search_filed a {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background: red;
+  color: #fff;
+  text-decoration: none;
+}
+.search_filed input {
+  padding: 10px 20px;
+}
+.header_logo h1 a {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
